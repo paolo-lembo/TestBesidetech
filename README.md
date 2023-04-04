@@ -7,12 +7,12 @@ docker desktop
 postman
 
 Per installare database:
-da src/resources/database/ lanciare il comando: "docker-compose up"
-da browser http://localhost/login ed effettuare l'accesso con le credenziali presenti nel file yml
-Creare un server denominato "DockerAppDB" specificando come host "172.21.0.2", la porta "5432", username "postgres" e password "admin"
-Creare un nuovo database all'interno del server appena creato chiamato "SearchChannel" ed utilizzare il file db.sql contenuto nella cartella database per fare il restore del db
+da src/resources/database/ lanciare il comando: "docker-compose up".
+da browser http://localhost/login ed effettuare l'accesso con le credenziali presenti nel file yml.
+Creare un server denominato "DockerAppDB" specificando come host "172.21.0.2", la porta "5432", username "postgres" e password "admin".
+Creare un nuovo database all'interno del server appena creato chiamato "SearchChannel" ed utilizzare il file db.sql contenuto nella cartella database per fare il restore del db.
 
-Per installare l'applicazione springboot
+Per installare l'applicazione springboot:
 posizionarsi nella root del proggeto e lanciare il comando "mvn install" da cmd o ide
 successivamente lanciare: "docker build -t DockerWebServer.jar ."
 
