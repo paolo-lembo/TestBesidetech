@@ -4,7 +4,7 @@ IN UN MODULO SPRING BOOT SVILUPPA UN CRUD INTERCONNESSO A DELLE TABELLE SU UN DB
 Prequisiti:
 java 8,
 docker desktop,
-postman,
+postman.
 
 Per installare database:
 da src/resources/database/ lanciare il comando: "docker-compose up".
