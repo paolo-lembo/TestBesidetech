@@ -14,7 +14,7 @@ Creare un nuovo database all'interno del server appena creato chiamato "SearchCh
 
 Per installare l'applicazione springboot:
 posizionarsi nella root del progetto e lanciare il comando "mvn install" da cmd o ide
-successivamente lanciare: "docker build -t DockerWebServer.jar ."
+successivamente lanciare: "docker build -t dockerwebserver.jar ."
 
 Per avviare l'applicazione:
 lanciare il comando: "docker run -p 5051:5051 dockerwebserver.jar"
