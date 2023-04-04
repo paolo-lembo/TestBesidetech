@@ -3,17 +3,23 @@ IN UN MODULO SPRING BOOT SVILUPPA UN CRUD INTERCONNESSO A DELLE TABELLE SU UN DB
 
 Prequisiti:
 java 8
-docker
+docker desktop
 postman
 
 Per installare database:
-
+da src/resources/database/ lanciare il comando: "docker-compose up"
+da browser http://localhost/login ed effettuare l'accesso con le credenziali presenti nel file yml
+Creare un server denominato "DockerAppDB" specificando come host "172.21.0.2", la porta "5432", username "postgres" e password "admin"
+Creare un nuovo database all'interno del server appena creato chiamato "SearchChannel" ed utilizzare il file db.sql contenuto nella cartella database per fare il restore del db
 
 Per installare l'applicazione springboot
-da terminale lanciare il comando: "mvn install"
-dalla root del progetto da terminale lanciare: 
-      "docker build -t DockerWebServer.jar ."
-      "docker run -p 5051:5051 dockerwebserver.jar"
+posizionarsi nella root del proggeto e lanciare il comando "mvn install" da cmd o ide
+successivamente lanciare: "docker build -t DockerWebServer.jar ."
+
+Per avviare l'applicazione:
+lanciare il comando: "docker run -p 5051:5051 dockerwebserver.jar"
+
+Per effettuare una chiamata alle diverse api implementante ho introdotto in "src/resources/postman/" una collection postman
 
 
 
